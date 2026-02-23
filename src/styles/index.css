@@ -1,0 +1,36 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* Futuristic animation keyframes */
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  8% { opacity: 0.85; }
+  10% { opacity: 1; }
+  55% { opacity: 1; }
+  57% { opacity: 0.75; }
+  60% { opacity: 1; }
+}
+
+@keyframes neon-pulse {
+  0%, 100% { box-shadow: 0 0 6px rgba(20,184,166,0.4), 0 0 12px rgba(20,184,166,0.2); }
+  50% { box-shadow: 0 0 14px rgba(20,184,166,0.7), 0 0 28px rgba(20,184,166,0.4), 0 0 50px rgba(20,184,166,0.15); }
+}
+
+@keyframes text-flicker {
+  0%, 100% { opacity: 1; }
+  19% { opacity: 1; }
+  20% { opacity: 0.8; }
+  21% { opacity: 1; }
+  50% { opacity: 1; }
+  51% { opacity: 0.85; }
+  52% { opacity: 1; }
+}
+
+.neon-pulse {
+  animation: neon-pulse 2.5s ease-in-out infinite;
+}
+
+.flicker {
+  animation: flicker 4s linear infinite;
+}
